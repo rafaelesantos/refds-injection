@@ -27,3 +27,23 @@ let package = Package(
     ]
 )
 ```
+
+## Usage
+
+```swift
+import RefdsInjection
+
+protocol MockViewModelProtocol {
+    var id: UUID { get }
+}
+
+class MockViewModel: MockViewModelProtocol {
+    var id: UUID
+    init(id: UUID) { self.id = id }
+}
+
+let expectedID = UUID()
+RefdsContainer.register(type: MockViewModelProtocol.self) { MockViewModel(id: expectedID) }
+let viewModel = RefdsContainer.resolve(type: MockViewModelProtocol.self)
+let receivedID = viewModel.id
+```
