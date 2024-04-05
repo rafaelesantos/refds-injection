@@ -5,11 +5,15 @@ import PackageDescription
 
 let package = Package(
     name: "RefdsInjection",
+    defaultLocalization: "pt",
     platforms: [
-        .iOS(.v15),
-        .macOS(.v12),
-        .macCatalyst(.v15),
-        .tvOS(.v13)
+        .iOS(.v17),
+        .macCatalyst(.v17),
+        .macOS(.v14),
+        .tvOS(.v17),
+        .watchOS(.v10),
+        .visionOS(.v1),
+        .driverKit(.v23)
     ],
     products: [
         .library(
