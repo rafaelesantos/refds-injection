@@ -1,4 +1,4 @@
-# Refds Injection
+# 💉 Refds Injection
 
 [![Swift](https://github.com/rafaelesantos/refds-injection/actions/workflows/swift.yml/badge.svg?branch=main)](https://github.com/rafaelesantos/refds-injection/actions/workflows/swift.yml)
 
