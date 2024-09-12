@@ -20,7 +20,7 @@ public final class RefdsContainer: RefdsInjectionProtocol {
         return service
     }
     
-    public static func resolve<Service>(
+    public static func resolveOptional<Service>(
         type: Service.Type
     ) -> Service? {
         services["\(type)"] as? Service
